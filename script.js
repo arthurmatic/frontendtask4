@@ -107,7 +107,7 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Who invented JavaScript?",
+        question: "1. Who invented JavaScript?",
         answers: {
           a: "Douglas Crockford",
           b: "Sheryl Sandberg",
@@ -117,7 +117,7 @@
         correctAnswer: "c"
       },
       {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "2. Which one of these is a JavaScript package manager?",
         answers: {
           a: "Node.js",
           b: "TypeScript",
@@ -127,7 +127,7 @@
         correctAnswer: "c"
       },
       {
-        question: "Which tool can you use to ensure code quality?",
+        question: "3. Which tool can you use to ensure code quality?",
         answers: {
           a: "Angular",
           b: "jQuery",
@@ -137,7 +137,7 @@
         correctAnswer: "d"
       },
       {
-        question: "Which of these is not a JavaScript framework?",
+        question: "4. Which of these is not a JavaScript framework?",
         answers: {
           a: "Angular",
           b: "React",
@@ -147,7 +147,7 @@
         correctAnswer: "c"
       },
       {
-        question: "Which the following is not an array method?",
+        question: "5. Which the following is not an array method?",
         answers: {
           a: "pop()",
           b: "splice()",
