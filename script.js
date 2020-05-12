@@ -1,4 +1,61 @@
 (function(){
+
+    // Variables
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    const myQuestions = [
+      {
+        question: "1. Who invented JavaScript?",
+        answers: {
+          a: "Douglas Crockford",
+          b: "Sheryl Sandberg",
+          c: "Brendan Eich",
+          d: "Mark Essien"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "2. Which one of these is a JavaScript package manager?",
+        answers: {
+          a: "Node.js",
+          b: "TypeScript",
+          c: "npm",
+          d: "backbone.js"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "3. Which tool can you use to ensure code quality?",
+        answers: {
+          a: "Angular",
+          b: "jQuery",
+          c: "RequireJS",
+          d: "ESLint"
+        },
+        correctAnswer: "d"
+      },
+      {
+        question: "4. Which of these is not a JavaScript framework?",
+        answers: {
+          a: "Angular",
+          b: "React",
+          c: "Laravel",
+          d: "Vue"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "5. Which the following is not an array method?",
+        answers: {
+          a: "pop()",
+          b: "splice()",
+          c: "join()",
+          d: "console.log()"
+        },
+        correctAnswer: "d"
+      }
+    ];
     // Functions
     function startquiz() {
       let startbtn = document.getElementById('start');
@@ -9,6 +66,7 @@
         welcome.style.display = "none";
       });
     }
+
     startquiz();
     
     function buildQuiz(){
@@ -112,62 +170,7 @@
       showSlide(currentSlide - 1);
     }
   
-    // Variables
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
-    const myQuestions = [
-      {
-        question: "1. Who invented JavaScript?",
-        answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich",
-          d: "Mark Essien"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "2. Which one of these is a JavaScript package manager?",
-        answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm",
-          d: "backbone.js"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "3. Which tool can you use to ensure code quality?",
-        answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
-        },
-        correctAnswer: "d"
-      },
-      {
-        question: "4. Which of these is not a JavaScript framework?",
-        answers: {
-          a: "Angular",
-          b: "React",
-          c: "Laravel",
-          d: "Vue"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "5. Which the following is not an array method?",
-        answers: {
-          a: "pop()",
-          b: "splice()",
-          c: "join()",
-          d: "console.log()"
-        },
-        correctAnswer: "d"
-      }
-    ];
+    
   
     // Kick things off
     buildQuiz();
