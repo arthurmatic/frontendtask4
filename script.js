@@ -1,5 +1,16 @@
 (function(){
     // Functions
+    function startquiz() {
+      let startbtn = document.getElementById('start');
+      let startquiz = document.getElementById('startquiz');
+      let welcome = document.getElementById('welcome');
+      startbtn.addEventListener('click', () => {
+        startquiz.style.display = "block";
+        welcome.style.display = "none";
+      });
+    }
+    startquiz();
+    
     function buildQuiz(){
       // variable to store the HTML output
       const output = [];
