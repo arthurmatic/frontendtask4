@@ -87,6 +87,7 @@ footer {
     margin-top: 35px;
   }
   section {
+    display: none;
     display: flex;
     flex-direction: column;
   }
